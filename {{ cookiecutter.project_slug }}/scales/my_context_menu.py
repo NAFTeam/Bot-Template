@@ -3,7 +3,7 @@ from core.base import CustomSnake
 from dis_snek import CommandTypes, InteractionContext, Message, Scale, context_menu
 
 
-class CustomScale(Scale):
+class ContextMenuScale(Scale):
     bot: CustomSnake
 
     @context_menu(name="repeat", context_type=CommandTypes.MESSAGE)
@@ -17,4 +17,4 @@ class CustomScale(Scale):
 def setup(bot: CustomSnake):
     """Let dis-snek load the scale"""
 
-    CustomScale(bot)
+    ContextMenuScale(bot)

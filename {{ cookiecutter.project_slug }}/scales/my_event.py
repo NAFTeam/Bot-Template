@@ -4,7 +4,7 @@ from dis_snek import Scale, listen
 from dis_snek.api.events import ChannelCreate
 
 
-class CustomScale(Scale):
+class EventScale(Scale):
     bot: CustomSnake
 
     @listen()
@@ -17,4 +17,4 @@ class CustomScale(Scale):
 def setup(bot: CustomSnake):
     """Let dis-snek load the scale"""
 
-    CustomScale(bot)
+    EventScale(bot)

@@ -3,7 +3,7 @@ from core.base import CustomSnake
 from dis_snek import InteractionContext, Scale, slash_command
 
 
-class CustomScale(Scale):
+class CommandScale(Scale):
     bot: CustomSnake
 
     @slash_command(name="hello_world", description="My first command :)")
@@ -16,4 +16,4 @@ class CustomScale(Scale):
 def setup(bot: CustomSnake):
     """Let dis-snek load the scale"""
 
-    CustomScale(bot)
+    CommandScale(bot)
