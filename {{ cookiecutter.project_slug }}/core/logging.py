@@ -3,7 +3,7 @@ import os
 import time
 from typing import Optional
 
-import dis_snek.client.const as dis_snek_const
+from dis_snek import logger_name
 
 
 class CustomLogger:
@@ -56,8 +56,4 @@ def init_logging():
     logger = CustomLogger()
 
     # Initialize logging for exceptions
-    logger_name = os.getenv("LOGGER_NAME")
     logger.make_logger(logger_name)
-
-    # tell dis-snek to log with this logger
-    dis_snek_const.logger_name = logger_name

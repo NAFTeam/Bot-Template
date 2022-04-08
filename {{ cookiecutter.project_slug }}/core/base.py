@@ -1,14 +1,14 @@
 import logging
 import os
 
-from dis_snek import Snake, listen
+from dis_snek import Snake, listen, logger_name
 
 
 class CustomSnake(Snake):
     """Subclass of dis_snek.Snake with our own logger and on_startup event"""
 
     # you can use that logger in all your scales
-    logger = logging.getLogger(os.getenv("LOGGER_NAME"))
+    logger = logging.getLogger(logger_name)
 
     @listen()
     async def on_startup(self):
