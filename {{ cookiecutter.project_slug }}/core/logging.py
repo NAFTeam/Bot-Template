@@ -17,6 +17,7 @@ class CustomLogger:
 
     def make_logger(self, log_name: str):
         logger = logging.getLogger(log_name)
+        logger.setLevel(logging.DEBUG)
 
         # log to console
         console_handler = logging.StreamHandler()
