@@ -1,0 +1,2 @@
+dis-snek>=8.0.0
+python-dotenv>=0.20.0

@@ -1,0 +1,6 @@
+{
+    "project_name": "New Discord Bot",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+
+    "discord_token": "changethis"
+}
