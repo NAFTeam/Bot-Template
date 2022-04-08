@@ -14,7 +14,7 @@ class CustomSnake(Snake):
     async def on_startup(self):
         """Gets triggered on startup"""
 
-        self.logger.info(f"{os.getenv('PROJECT_NAME')} - Startup Finished!\n")
+        self.logger.info(f"{os.getenv('PROJECT_NAME')} - Startup Finished!")
         self.logger.info(
-            "Note: Discord needs up to an hour to load your commands / context menus. They may not appear immediately"
+            "Note: Discord needs up to an hour to load your commands / context menus. They may not appear immediately\n"
         )
