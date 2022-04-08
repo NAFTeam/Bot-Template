@@ -22,7 +22,7 @@ class CustomLogger:
         # log to console
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(self.formatter)
-        console_handler.setLevel(logging.DEBUG)
+        console_handler.setLevel(logging.INFO)
 
         # log to file
         file_handler = MakeFileHandler(
