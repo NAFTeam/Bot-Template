@@ -20,4 +20,4 @@ def load_scales(bot: CustomSnake):
                 # load the scale
                 bot.load_extension(python_import_path)
 
-    bot.logger.info(f"< {len(bot.interactions)} > Interactions Loaded")
+    bot.logger.info(f"< {len(bot.interactions[0])} > Global Interactions Loaded")
