@@ -2,5 +2,8 @@
     "project_name": "New Discord Bot",
     "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
 
+    "license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0"],
+    "license_organization": "Your Name",
+
     "discord_token": "changethis"
 }
