@@ -25,7 +25,7 @@ if __name__ == "__main__":
     )
 
     # load the debug scale if that is wanted
-    if (dev_guild_id := os.getenv("LOAD_DEBUG_COMMANDS")) == "yes":
+    if (dev_guild_id := os.getenv("LOAD_DEBUG_COMMANDS")) == "true":
         debug_scale = DebugScale(bot=bot)
 
     # load all scales in the ./scales folder
