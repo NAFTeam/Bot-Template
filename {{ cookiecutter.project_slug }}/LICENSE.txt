@@ -1,5 +1,5 @@
 {%- if cookiecutter.license == "MIT" -%}
-Copyright (c) {{ % now 'utc', '%Y' % }} - now, {{ cookiecutter.license_organization }}
+Copyright (c) {% now 'utc', '%Y' %} - now, {{ cookiecutter.license_organization }}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 OR OTHER DEALINGS IN THE SOFTWARE.
 
 {%- elif cookiecutter.license == "BSD-3" -%}
-Copyright (c) {{ % now 'utc', '%Y' % }} - now, {{ cookiecutter.license_organization }}
+Copyright (c) {% now 'utc', '%Y' %} - now, {{ cookiecutter.license_organization }}
 
 All rights reserved.
 
@@ -703,7 +703,7 @@ Also add information on how to contact you by electronic and paper mail.
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    {{ cookiecutter.project_name }}  Copyright (C) {{ % now 'utc', '%Y' % }} - now,  {{ cookiecutter.license_organization }}
+    {{ cookiecutter.project_name }}  Copyright (C) {% now 'utc', '%Y' %} - now,  {{ cookiecutter.license_organization }}
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `show c' for details.
@@ -919,7 +919,7 @@ APPENDIX: How to apply the Apache License to your work
     on the same "printed page" as the copyright notice for easier
     identification within third-party archives.
 
-        Copyright {{ % now 'utc', '%Y' % }} - now, {{ cookiecutter.license_organization }}
+        Copyright {% now 'utc', '%Y' %} - now, {{ cookiecutter.license_organization }}
 
         Licensed under the Apache License, Version 2.0 (the "License");
         you may not use this file except in compliance with the License.
