@@ -1,5 +1,6 @@
 import os
 
+from dis_snek.ext.debug_scale import DebugScale
 from dotenv import load_dotenv
 
 from core.logging import init_logging
@@ -22,6 +23,10 @@ if __name__ == "__main__":
         auto_defer=True,  # automatically deferring interactions
         activity="A dis-snek bot",  # the status message of the bot
     )
+
+    # load the debug scale if that is wanted
+    if (dev_guild_id := os.getenv("LOAD_DEBUG_COMMANDS")) == "yes":
+        debug_scale = DebugScale(bot=bot)
 
     # load all scales in the ./scales folder
     load_scales(bot=bot)
