@@ -1,7 +1,7 @@
 # {{cookiecutter.project_name}}
 
 
-A discord bot made with [dis-snek](https://github.com/Discord-Snake-Pit/Dis-Snek).
+A discord bot made with [NAFF](https://github.com/Discord-Snake-Pit/NAFF).
 Visit [the official guide](https://dis-snek.readthedocs.io/Guides/01%20Getting%20Started/) to get started.
 
 # Running the Application

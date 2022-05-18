@@ -64,7 +64,7 @@ unicode_backport = ["unicodedata2"]
 
 [[package]]
 name = "dis-snek"
-version = "8.0.0"
+version = "9.0.0"
 description = "An API wrapper for Discord filled with snakes"
 category = "main"
 optional = false
@@ -77,8 +77,9 @@ discord-typings = "*"
 tomli = "*"
 
 [package.extras]
-all = ["PyNaCl (>=1.5.0,<1.6)", "yt-dlp"]
-voice = ["PyNaCl (>=1.5.0,<1.6)", "yt-dlp"]
+all = ["PyNaCl (>=1.5.0,<1.6)", "cchardet", "aiodns", "orjson"]
+speedup = ["cchardet", "aiodns", "orjson"]
+voice = ["PyNaCl (>=1.5.0,<1.6)"]
 
 [[package]]
 name = "discord-typings"
@@ -144,11 +145,11 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "typing-extensions"
-version = "4.1.1"
-description = "Backported and Experimental Type Hints for Python 3.6+"
+version = "4.2.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [[package]]
 name = "yarl"
@@ -165,7 +166,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "4f782696bac51dd8c768a493f24a6ad338b0a4cc2e308b44a1fe86107b0dbbd0"
+content-hash = "16c6bfdd538578c906de3d59e359af53bc2062ccda5a3e4909d92c6044c01af0"
 
 [metadata.files]
 aiohttp = [
@@ -259,8 +260,8 @@ charset-normalizer = [
     {file = "charset_normalizer-2.0.12-py3-none-any.whl", hash = "sha256:6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"},
 ]
 dis-snek = [
-    {file = "dis-snek-8.0.0.tar.gz", hash = "sha256:c035a4f664f9a638b80089f2a9a3330a4254fc227ef2c83c96582df06f392281"},
-    {file = "dis_snek-8.0.0-py3-none-any.whl", hash = "sha256:3a89c8f78c27407fb67d42dfaa51be6a507306306779e45cd47687bd846b3b23"},
+    {file = "dis-snek-9.0.0.tar.gz", hash = "sha256:335db8acfcb6a0c6639813252969d2c79b3491c9cc72788ef29ddda882604bd8"},
+    {file = "dis_snek-9.0.0-py3-none-any.whl", hash = "sha256:ac42f61872014d2e297ddca031a40dae8ec3d592816702108fa4c31eb26dda02"},
 ]
 discord-typings = [
     {file = "discord-typings-0.4.0.tar.gz", hash = "sha256:66bce666194e8f006914f788f940265c009cce9b63f9a8ce2bc7931d3d3ef11c"},
@@ -435,8 +436,8 @@ tomli = [
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 typing-extensions = [
-    {file = "typing_extensions-4.1.1-py3-none-any.whl", hash = "sha256:21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2"},
-    {file = "typing_extensions-4.1.1.tar.gz", hash = "sha256:1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42"},
+    {file = "typing_extensions-4.2.0-py3-none-any.whl", hash = "sha256:6657594ee297170d19f67d55c05852a874e7eb634f4f753dbd667855e07c1708"},
+    {file = "typing_extensions-4.2.0.tar.gz", hash = "sha256:f1c24655a0da0d1b67f07e17a5e6b2a105894e6824b92096378bb3668ef02376"},
 ]
 yarl = [
     {file = "yarl-1.7.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:f2a8508f7350512434e41065684076f640ecce176d262a7d54f0da41d99c5a95"},

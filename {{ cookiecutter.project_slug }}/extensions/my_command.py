@@ -1,17 +1,16 @@
-from core.base import CustomSnake
+from core.base import CustomClient
 
-from dis_snek import (
+from naff import (
     Button,
     ButtonStyles,
     ComponentContext, Embed,
-    InteractionContext,
-    Scale,
+    Extension, InteractionContext,
     component_callback, slash_command,
 )
 
 
-class CommandScale(Scale):
-    bot: CustomSnake
+class CommandExtension(Extension):
+    bot: CustomClient
 
     @slash_command(name="hello_world", description="My first command :)")
     async def my_command(self, ctx: InteractionContext):
@@ -38,7 +37,7 @@ class CommandScale(Scale):
         await ctx.send("Hiya to you too")
 
 
-def setup(bot: CustomSnake):
-    """Let dis-snek load the scale"""
+def setup(bot: CustomClient):
+    """Let naff load the extension"""
 
-    CommandScale(bot)
+    CommandExtension(bot)

@@ -1,10 +1,10 @@
-from core.base import CustomSnake
+from core.base import CustomClient
 
-from dis_snek import CommandTypes, InteractionContext, Message, Scale, context_menu
+from naff import CommandTypes, InteractionContext, Message, context_menu, Extension
 
 
-class ContextMenuScale(Scale):
-    bot: CustomSnake
+class ContextMenuExtension(Extension):
+    bot: CustomClient
 
     @context_menu(name="repeat", context_type=CommandTypes.MESSAGE)
     async def my_context_menu(self, ctx: InteractionContext):
@@ -14,7 +14,7 @@ class ContextMenuScale(Scale):
         await ctx.send(message.content)
 
 
-def setup(bot: CustomSnake):
-    """Let dis-snek load the scale"""
+def setup(bot: CustomClient):
+    """Let naff load the extension"""
 
-    ContextMenuScale(bot)
+    ContextMenuExtension(bot)

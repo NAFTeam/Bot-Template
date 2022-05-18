@@ -1,13 +1,13 @@
 import logging
 import os
 
-from dis_snek import Snake, listen, logger_name
+from naff import Client, listen, logger_name
 
 
-class CustomSnake(Snake):
-    """Subclass of dis_snek.Snake with our own logger and on_startup event"""
+class CustomClient(Client):
+    """Subclass of naff.Client with our own logger and on_startup event"""
 
-    # you can use that logger in all your scales
+    # you can use that logger in all your extensions
     logger = logging.getLogger(logger_name)
 
     @listen()
@@ -16,5 +16,5 @@ class CustomSnake(Snake):
 
         self.logger.info(f"{os.getenv('PROJECT_NAME')} - Startup Finished!")
         self.logger.info(
-            "Note: Discord needs up to an hour to load your commands / context menus. They may not appear immediately\n"
+            "Note: Discord needs up to an hour to load your global commands / context menus. They may not appear immediately\n"
         )
