@@ -2,7 +2,7 @@
 
 
 A discord bot made with [NAFF](https://github.com/Discord-Snake-Pit/NAFF).
-Visit [the official guide](https://dis-snek.readthedocs.io/Guides/01%20Getting%20Started/) to get started.
+Visit [the official guide](https://naff.readthedocs.io/Guides/01%20Getting%20Started/) to get started.
 
 # Running the Application
 There are multiple ways to launch the application.

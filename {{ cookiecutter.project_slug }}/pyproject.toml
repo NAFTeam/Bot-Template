@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "{{ cookiecutter.project_name }}"
 version = "0.1.0"
-description = "A discord bot made with dis-snek."
+description = "A discord bot made with naff."
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
