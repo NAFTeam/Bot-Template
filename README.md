@@ -1,6 +1,6 @@
 # Bot-Template
 
-A cookiecutter template for a discord bot with [dis-snek](https://github.com/Discord-Snake-Pit/Dis-Snek) made by [Kigstn](https://github.com/Kigstn)
+A cookiecutter template for a discord bot with [NAFF](https://github.com/Discord-Snake-Pit/NAFF) made by [Kigstn](https://github.com/Kigstn)
 
 Made for users to get started making discord bot easier.
 

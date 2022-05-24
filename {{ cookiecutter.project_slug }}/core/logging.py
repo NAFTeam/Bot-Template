@@ -3,7 +3,7 @@ import os
 import time
 from typing import Optional
 
-from dis_snek import logger_name
+from naff import logger_name
 
 
 class CustomLogger:

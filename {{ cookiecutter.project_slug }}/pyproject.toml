@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "{{ cookiecutter.project_name }}"
 version = "0.1.0"
-description = "A discord bot made with dis-snek."
+description = "A discord bot made with naff."
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-dis-snek = "^8.0.0"
 python-dotenv = "^0.20.0"
 orjson = "^3.6.7"
+naff = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 
