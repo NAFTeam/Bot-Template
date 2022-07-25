@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from naff import Intents
 from naff.ext.debug_extension import DebugExtension
 
-from core.logging import init_logging
+from core.init_logging import init_logging
 from core.base import CustomClient
 from core.extensions_loader import load_extensions
 
